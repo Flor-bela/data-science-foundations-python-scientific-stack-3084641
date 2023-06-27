@@ -2,7 +2,7 @@
 40 + 2
 
 # %%
-"Hi" + " there :)"
+"Hi" + " there :) "
 
 # %%
 import matplotlib.pyplot as plt
