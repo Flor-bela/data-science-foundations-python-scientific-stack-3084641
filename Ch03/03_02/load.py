@@ -4,10 +4,10 @@ from pathlib import Path
 kb = 2**10
 
 csv_file = Path('track.csv')
-csv_file.stat().st_size / kb
-
+csv_file.stat().st_size / kb #st_size is in bytes
+#The result is in kilobyte
 # %%
-!ls -lh $csv_file
+!ls -lh $csv_file #only works on Linus or Mac not on windows
 
 # %% First few lines & line count
 count = 0
@@ -36,3 +36,5 @@ df.columns
 df.info()
 # %%
 df.describe()
+
+# %%
