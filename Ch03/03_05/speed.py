@@ -56,3 +56,6 @@ times_hour[:5]
 # %%
 speed = dist / times_hour
 speed[:5]
+
+# %%
+speed.astype()

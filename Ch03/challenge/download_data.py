@@ -1,3 +1,4 @@
+# %%
 from urllib.request import urlretrieve
 
 dl_size = 0
@@ -12,3 +13,6 @@ def reporthook(_, size, total):
 data_url = 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-08.parquet'
 out_file = 'taxi.parquet'
 urlretrieve(data_url, out_file, reporthook=reporthook)
+
+
+# %%
