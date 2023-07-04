@@ -6,6 +6,7 @@ cal_housing = fetch_california_housing()
 # %%
 type(cal_housing)
 
+
 # %%
 cal_housing.keys()
 
@@ -79,3 +80,4 @@ clf.predict(row)
 
 # %%
 y[i]
+# %%
