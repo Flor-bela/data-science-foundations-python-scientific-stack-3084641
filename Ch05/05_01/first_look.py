@@ -4,6 +4,7 @@ from pathlib import Path
 csv_file = Path('taxi.csv')
 mb = 2**20
 csv_file.stat().st_size / mb
+#163 megabytes
 
 # %%
 num_lines = 0
@@ -14,3 +15,4 @@ with csv_file.open() as fp:
         num_lines += 1
 
 print(f'lines: {num_lines:,}')
+# %%

@@ -21,3 +21,4 @@ df = pd.read_csv(
     parse_dates=time_cols,
 )
 df.dtypes
+# %%

@@ -22,4 +22,6 @@ m = folium.Map(
 m
 
 # %%
+#Save as html 
 m.save('track.html')
+# %%
