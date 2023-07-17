@@ -51,3 +51,4 @@ from sklearn.decomposition import PCA
 pca = PCA(n_components=4)
 X_pca = pca.fit_transform(X)
 X_pca.shape
+# %%
