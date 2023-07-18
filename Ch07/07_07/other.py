@@ -3,12 +3,12 @@ import pandas as pd
 
 df = pd.read_csv(
     'track.csv',
-    parse_dates=['time'],
-    index_col='time'
+    parse_dates=['time'], #parse the time column
+    index_col='time' #and set it to the index
 )
 df = (
     df
-    .resample('3min')
+    .resample('3min') #resample with 3 minute interval
     .mean()
     .reset_index()
 )
