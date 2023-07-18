@@ -12,6 +12,7 @@ df.head()
 msft = df.query('Symbol == "MSFT"')
 
 # %%
+# Plot a median of the daily volume:
 daily = (
     msft
     ['Volume']
@@ -30,3 +31,4 @@ ax.set_xticklabels(
 )
 ax.set_xlabel('Weekday')
 ax.set_ylabel('Volume')
+# %%

@@ -9,7 +9,8 @@ df = pd.read_csv(
 df.head()
 
 # %%
-msft = df.query('Symbol == "MSFT"')
+# Check msft (microsoft) price over time 
+msft = df.query('Symbol == "MSFT"') # show only the rows with msft
 msft['Close'].plot()
 
 # %%
@@ -19,10 +20,11 @@ msft['Close'].plot.kde()
 (
     df
     .pivot(
-        columns='Symbol',
-        values='Volume'
+        columns='Symbol', 
+        values='Volume' 
     )
-    .resample('M')
-    .sum()
+    .resample('M') # By month
+    .sum() 
     .plot.bar(xticks=range(12), rot=0)
 )
+# %%

@@ -1,7 +1,7 @@
 # %%
 from sklearn.datasets import load_iris
 
-iris = load_iris(as_frame=True)
+iris = load_iris(as_frame=True) #to get a dataframe
 df = iris['data'].head(5)
 df
 
@@ -40,9 +40,11 @@ df.style.applymap(
 # %%
 def top50(col):
     is_top50 = col >= col.median()
-    return [
-        'font-weight: bold' if v else ''
+    return [ #use a list comprehension to create values per cell 
+        'font-weight: bold' if v else '' #empty string meaning no change in style
         for v in is_top50
     ]
 
 df.style.apply(top50) 
+
+# %%
